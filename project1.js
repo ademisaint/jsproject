@@ -29,9 +29,11 @@ calcCpPerItem.addEventListener('click', (button) => {
 
 function getSellingPriceL(){
     let cppi1 = parseFloat(document.getElementById('costPricePerItem1').value);
-    let spPerItem = cppi1 * (5 / 100);
+    let spPerItem = (cppi1 * (5 / 100)) + cppi1;
+    let profit = spPerItem - cppi1
 
     document.getElementById('sellingPricePerItem1').value = spPerItem.toFixed(2);
+    document.getElementById('profit').value = profit
 
     console.log(spPerItem)
 }
@@ -43,9 +45,11 @@ calcSpPerItemL.addEventListener('click', (button) => {
 
 function getSellingPriceM(){
     let cppi1 = parseFloat(document.getElementById('costPricePerItem2').value);
-    let spPerItem = cppi1 * (10 / 100);
+    let spPerItem = (cppi1 * (10 / 100)) + cppi1;
+    let profit2 = spPerItem - cppi1
 
     document.getElementById('sellingPricePerItem2').value = spPerItem.toFixed(2);
+    document.getElementById('profit2').value = profit2
 
     console.log(spPerItem)
 }
@@ -57,9 +61,11 @@ calcSpPerItemM.addEventListener('click', (button) => {
 
 function getSellingPriceH(){
     let cppi1 = parseFloat(document.getElementById('costPricePerItem3').value);
-    let spPerItem = cppi1 * (20 / 100);
+    let spPerItem = (cppi1 * (20 / 100)) + cppi1;
+    let profit3 = spPerItem - cppi1
 
     document.getElementById('sellingPricePerItem3').value = spPerItem.toFixed(2);
+    document.getElementById('profit3').value = profit3
 
     console.log(spPerItem)
 }
